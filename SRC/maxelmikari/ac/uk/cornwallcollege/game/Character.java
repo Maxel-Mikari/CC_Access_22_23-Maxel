@@ -7,6 +7,14 @@ public class Character {
     int speed;
     int size;
 
+    public Character(int health, int attack, int defence, int speed, int size, String name) {
+        this.health = health;
+        this.attack = attack;
+        this.defence = defence;
+        this.speed = speed;
+        this.size = size;
+        this.name = name;
+    }
 
     String name;
 
