@@ -15,7 +15,6 @@ public class Character {
         this.size = size;
         this.name = name;
     }
-
     String name;
 
     public void hit(Character c) {
