@@ -20,5 +20,12 @@ public class GameTest {
 
         c1.hit(c2);
         assertEquals(35, c2.health);
+        System.out.println("Test successfully passed! Health is "+c2.health);
+    }
+
+    @Test
+    public void testPlayableCharacterCreation() {
+        PlayableCharacter c1 = new PlayableCharacter( 50, 15, 20, 5, 1, "Maxel Mikari");
+        assertEquals( 0,c1.experience);
     }
 }
