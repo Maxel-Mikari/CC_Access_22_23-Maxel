@@ -1,5 +1,7 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
+import maxelmikari.ac.uk.cornwallcollege.game.PlayableCharacter;
+
 public class Item {
     String name;
 

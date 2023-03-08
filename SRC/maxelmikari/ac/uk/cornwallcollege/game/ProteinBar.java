@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class ProteinBar extends Item{
+public class ProteinBar extends Item {
     public ProteinBar(String name) {
         super(name);
     }

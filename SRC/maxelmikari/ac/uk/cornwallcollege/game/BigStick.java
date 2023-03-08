@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class BigStick extends Item{
+public class BigStick extends Item {
     public BigStick(String name) {
         super(name);
     }

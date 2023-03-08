@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class RedBull extends Item{
+public class RedBull extends Item {
     public RedBull(String name) {
         super(name);
     }

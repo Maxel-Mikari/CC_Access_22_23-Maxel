@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class Skittles extends Item{
+public class Skittles extends Item {
     public Skittles(String name) {
         super(name);
     }

@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class Stick extends Item{
+public class Stick extends Item {
     public Stick(String name) {
         super(name);
     }

@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class Mushroom extends Item{
+public class Mushroom extends Item {
     public Mushroom(String name) {
         super(name);
     }
