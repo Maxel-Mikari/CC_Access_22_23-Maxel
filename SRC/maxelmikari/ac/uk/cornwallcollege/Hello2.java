@@ -38,7 +38,6 @@ public class Hello2 {
     private static int safeDivide(int numerator, int denominator) throws ArithmeticException {
         if (numerator % denominator != 0)
             throw new ArithmeticException("Inexact Division");
-        int denomiator = 0;
-        return numerator / denomiator;
+        return numerator / denominator;
     }
 }
