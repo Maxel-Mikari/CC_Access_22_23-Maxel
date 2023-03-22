@@ -8,7 +8,8 @@ public class Hello2 {
         Scanner scanner = new Scanner(System.in);
         int numerator;
         int denominator = 0;
-
+        int[] results=new int[10];
+        int counter = 0;
         do {
             try{
                 System.out.println("Input two numbers");
@@ -16,6 +17,7 @@ public class Hello2 {
                 denominator = scanner.nextInt();
                 int result = numerator / denominator;
                 System.out.println("" + numerator + " / " + denominator + " = " + result);
+                results[counter++] = result;
             } catch (ArithmeticException ex1) {
                 System.out.println ("You tried to divide by zero");
             } catch (InputMismatchException ex2) {
@@ -24,5 +26,9 @@ public class Hello2 {
             }
 
         } while (denominator != -1);
+
+        for(int i=0;i<counter;++i) {
+            System.out.println(results[i]);
+        }
     }
 }
