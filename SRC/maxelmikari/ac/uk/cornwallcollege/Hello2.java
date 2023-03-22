@@ -11,6 +11,7 @@ public class Hello2 {
 
         do {
             try{
+                System.out.println("Input two numbers");
                 numerator = scanner.nextInt();
                 denominator = scanner.nextInt();
                 int result = numerator / denominator;
