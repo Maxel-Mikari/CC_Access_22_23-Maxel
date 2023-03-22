@@ -7,7 +7,7 @@ public class Hello2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numerator;
-        int denominator;
+        int denominator = 0;
 
         do {
             try{
