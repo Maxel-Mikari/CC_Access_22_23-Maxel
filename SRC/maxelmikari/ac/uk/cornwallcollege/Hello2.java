@@ -15,7 +15,7 @@ public class Hello2 {
                 System.out.println("Input two numbers");
                 numerator = scanner.nextInt();
                 denominator = scanner.nextInt();
-                int result = numerator / denominator;
+                int result = safeDivide (numerator , denominator);
                 System.out.println("" + numerator + " / " + denominator + " = " + result);
                 results[counter++] = result;
             } catch (ArithmeticException ex1) {
@@ -30,5 +30,15 @@ public class Hello2 {
         for(int i=0;i<counter;++i) {
             System.out.println(results[i]);
         }
+
+
+
+    }
+
+    private static int safeDivide(int numerator, int denominator) throws ArithmeticException {
+        if (numerator % denominator != 0)
+            throw new ArithmeticException("Inexact Division");
+        int denomiator = 0;
+        return numerator / denomiator;
     }
 }
