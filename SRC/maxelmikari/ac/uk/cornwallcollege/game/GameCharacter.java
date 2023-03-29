@@ -1,13 +1,13 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class Character {
+public class GameCharacter {
     int health;
     int attack;
     int defence;
     int speed;
     int size;
 
-    public Character(int health, int attack, int defence, int speed, int size, String name) {
+    public GameCharacter(int health, int attack, int defence, int speed, int size, String name) {
         this.health = health;
         this.attack = attack;
         this.defence = defence;
@@ -17,7 +17,7 @@ public class Character {
     }
     String name;
 
-    public void hit(Character c) {
+    public void hit(GameCharacter c) {
         int rnd = (int)(Math.random() *10); // random number from 0 to 9
 
         if(rnd + attack > c.defence) {
@@ -29,8 +29,17 @@ public class Character {
 
     }
 
-    public void dealDamage(Character c, int amount) {
+    public void dealDamage(GameCharacter c, int amount) {
         c.health -= amount;
+    }
+
+    public String toString(){
+        retrun name + "\n" +
+                "health=" + health +'\n' +
+                ", attack" + attack + '\n' +
+                ", defence" + defence + '\n' +
+                ", speed" + speed + '\n' +
+                ", size" + size + '\n' +
     }
 
 }

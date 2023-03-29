@@ -7,7 +7,7 @@ public class TeamRocket extends NPC{
     }
 
     @Override
-    public void dealDamage(Character c, int amount) {
+    public void dealDamage(GameCharacter c, int amount) {
         c.health -= attack;
 
         c.health -= attack;

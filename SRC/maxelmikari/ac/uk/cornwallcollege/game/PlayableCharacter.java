@@ -1,6 +1,6 @@
 package maxelmikari.ac.uk.cornwallcollege.game;
 
-public class PlayableCharacter extends Character {
+public class PlayableCharacter extends GameCharacter {
 
     String mood;
     int experience;
