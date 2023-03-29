@@ -33,6 +33,7 @@ public class GameCharacter {
         c.health -= amount;
     }
 
+    @Override
     public String toString(){
         retrun name + "\n" +
                 "health=" + health +'\n' +
@@ -40,6 +41,6 @@ public class GameCharacter {
                 ", defence" + defence + '\n' +
                 ", speed" + speed + '\n' +
                 ", size" + size + '\n' +
-    }
+                '}';
 
 }
