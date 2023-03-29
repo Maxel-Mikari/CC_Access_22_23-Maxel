@@ -15,12 +15,13 @@ public class GameCharacter {
         this.size = size;
         this.name = name;
     }
+
     String name;
 
     public void hit(GameCharacter c) {
-        int rnd = (int)(Math.random() *10); // random number from 0 to 9
+        int rnd = (int) (Math.random() * 10); // random number from 0 to 9
 
-        if(rnd + attack > c.defence) {
+        if (rnd + attack > c.defence) {
             System.out.println(this.name + " successfully hits " + c.name);
             dealDamage(c, size * attack);
         } else {
@@ -34,13 +35,13 @@ public class GameCharacter {
     }
 
     @Override
-    public String toString(){
-        retrun name + "\n" +
-                "health=" + health +'\n' +
+    public String toString() {
+        return name + "\n" +
+                "health=" + health + '\n' +
                 ", attack" + attack + '\n' +
                 ", defence" + defence + '\n' +
                 ", speed" + speed + '\n' +
                 ", size" + size + '\n' +
                 '}';
-
+    }
 }
